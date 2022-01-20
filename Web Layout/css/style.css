@@ -1,0 +1,213 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: .3s;
+    animation: reverse 2s steps(5ch);
+}
+ul
+{
+    background-color:indigo;
+    text-align: right;
+    font-size: 22px;
+    padding: 20px;
+}
+li
+{
+    display: inline-block;
+    padding: 20px;
+    transition: .3s;
+}
+li:hover,a:hover
+{
+    background-color: ivory;
+    padding:20px;
+    border-radius: 20px;
+    color: indigo;
+}
+.title
+{
+    font-size: 10vh;
+    text-align: center;
+    background-color: rgb(233,232,232);
+    padding: 20px;
+}
+.title p
+{
+    color: indigo;
+    text-transform: uppercase;
+}
+.row
+{
+    width: 100%;
+    margin-top: 30px;
+}
+.row::after
+{
+    clear: both;
+    display: block;
+    content: '';
+}
+h1
+{
+    text-align: center;
+    color: indigo;
+    margin-bottom: 20px;
+}
+.card1
+{
+    float: left;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card2
+{
+    float: left;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2
+{
+    color: blueviolet;
+}
+.profile
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 40px;
+}
+.profile label
+{
+    color: blueviolet;
+    font-size: 5vh;
+}
+.address p
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.address
+{
+    margin-bottom: 30px;
+}
+.footer
+{
+    background-color: indigo;
+    text-align: center;
+    padding: 20px;
+}
+.footer label
+{
+    color: white;
+    padding: 20px;
+}
+@media screen and  (max-width:720px)
+{
+ ul
+ {
+     text-align: center;
+ }   
+ .profile
+ {
+     width: 50%;
+ }
+}
+@media screen and (max-width:512px) 
+{
+    ul li
+    {
+        display: block;
+        padding: 20px;
+    }    
+    .card1 ,.card2
+    {
+        width: 100%;
+    }
+
+    .profile
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:280px) 
+{
+ nav
+ {
+     width: 100%;
+ }   
+}
+.quote
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+.quote label
+{
+    width: 33ch;
+    animation: typing 3s steps(32) ,blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow:hidden;
+    border-right: 2px solid;
+    font-family: monospace;
+    font-size: 20px;
+    color: indigo;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.quote label::after
+{
+    content: '';
+    display: inline-flex;
+    width: 33ch;
+    animation: typing 3s steps(32) ,blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow:hidden;
+    border-right: 2px solid;
+    font-family: monospace;
+    font-size: 20px;
+    color: indigo;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.align
+{
+    text-align: center;
+}
+@keyframes typing
+{
+    from
+    {
+        width: 0;
+    }
+}
+@keyframes blink
+{
+    50%
+    {
+        border-color: transparent;
+    }
+}
+html
+{
+    outline: none;
+}
